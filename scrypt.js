@@ -2,11 +2,11 @@ const URL = "https://api.openweathermap.org/data/2.5/weather?q=";
 const apikey = "&appid=897ed6fe7a903b56a865b914d8cf85e6&units=metric"; // Added '&' before 'appid'
 const temp = document.querySelector(".temp");
 const city_name = document.querySelector(".city-name");
-const humidity_h = document.querySelector(".humidity-h");
-const wind_h = document.querySelector(".wind-h");
 const first_text = document.querySelector(".first-text"); // Corrected class name
 const first_btn = document.querySelector(".first-btn");
 const img = document.querySelector(".second img");
+const humidity_h = document.querySelector(".humidity-h");
+const wind_h = document.querySelector(".wind-h");
 
 async function checkweather(place) {
   const response1 = await fetch(URL + place + apikey); // Concatenated apikey directly
