@@ -30,6 +30,7 @@ async function checkweather(place) {
   } else if (data.weather[0].main == "Mist") {
     img.setAttribute("src", "images/mist.png");
   }
+  
 }
 
 first_btn.addEventListener("click", () => {
